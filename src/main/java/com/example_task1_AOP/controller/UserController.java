@@ -172,10 +172,24 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.createUser(userDto));
     }
 
-//    @PutMapping("/users")
-//    public ResponseEntity<UserDto> updateUserInfo(@RequestBody UserDto userDto) {
-//        return ResponseEntity.status(HttpStatus.OK).body(userService.updateUserName(userDto));
-//    }
+    /**
+     * Метод put запроса для обновления имени или почты пользователя
+     * Пример запроса: PUT http://localhost:8080/api/users/id/1
+     * {
+     * "name": "User3",
+     * "email": "new@abc.com"
+     * }
+     * Пример ответа:
+     * {
+     * "id": 1,
+     * "name": "User3",
+     * "email": "new@abc.com",
+     * }
+     *
+     * @param id
+     * @param userDto
+     * @return ResponseEntity
+     */
 
     @PutMapping("/users/{id}")
     public ResponseEntity<UserDto> updateUserInfo(@PathVariable int id,
