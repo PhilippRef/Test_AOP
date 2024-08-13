@@ -112,7 +112,7 @@ public class OrderService {
 
         orderDB.setId(orderDto.getId());
         orderDB.setDescription(orderDto.getDescription());
-        orderDB.setStatus(orderDto.getStatus()); //TODO: здесь не присваивается userDB
+        orderDB.setStatus(orderDto.getStatus());
         orderDB.setUserDB(userDB);
 
         return orderDB;
