@@ -198,7 +198,6 @@ class OrderServiceTest {
             orderDto.setDescription("Test Order");
             orderDto.setStatus(OrderStatus.CREATED);
             orderDto.setUserDB("test@test.com");
-//        orderDto.setUserDB(userDB.getName());
 
             orderRepository.save(orderDB);
         }

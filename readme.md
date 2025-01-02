@@ -3,10 +3,9 @@
 удалять пользователей и их заказы.
 
 Применены технологии: Spring Boot, Spring Data JPA, Spring AOP, 
-liquebase, PostgreSQL, Log4j2.
+liquebase, PostgreSQL, Log4j2, docker.
 
-Для запуска приложения необходимо создать 
-базу данных с именем AOP_order в PostgreSQL.
+Приложение запускать через docker.
 
 Для старта приложения необходимо запустить Task1AopApplication.
 
@@ -16,5 +15,3 @@ liquebase, PostgreSQL, Log4j2.
 указаны в соответствующих классах.
 
 В папку /logs пишутся логи при работе приложения.
-
-Пользуйтесь!
